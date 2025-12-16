@@ -1,7 +1,9 @@
 services:
-  flutter_web:
+  examen_final_oliver:
+    image: clima-flutter-web-app
     build: .
     ports:
-      - "8080:80"
-    container_name: flutter_web_app
+      - "80:80"
     restart: unless-stopped
+    deploy:
+      replicas: 2
